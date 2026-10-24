@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio profesional de Nelson Álvarez, Ingeniero de Software Junior especializado en QA, automatización de pruebas, APIs, microservicios y rendimiento en Medellín, Colombia.">
+    <meta name="keywords"
+        content="QA, Quality Assurance, QA Automation, Testing, Automation , Nelson Alvarez, Medellín, Colombia, APIs, Microservicios, JMeter, Serenity BDD, Karate Framework">
+    <meta name="author" content="Nelson Álvarez">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nelson Álvarez | Junior QA Automation & Software Quality ">
+    <meta property="og:description"
+        content="Portafolio profesional de Nelson Álvarez. Especialista en asegurar la calidad del software mediante automatización de pruebas frontend, backend, APIs y rendimiento.">
+    <meta property="og:image" content="assets/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Nelson Álvarez | Junior QA Automation & Software Quality ">
+    <meta property="twitter:description"
+        content="Portafolio profesional de Nelson Álvarez. Especialista en asegurar la calidad del software mediante automatización de pruebas frontend, backend, APIs y rendimiento.">
+    <meta property="twitter:image" content="assets/profile.jpeg">
+
+    <title>Nelson Álvarez | Junior QA Automation & Quality </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Loader Inicial -->
+    <div id="loader-wrapper" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-terminal">
+                <span class="terminal-prompt">nelson@qa-engine:~$</span>
+                <span class="terminal-text" id="loader-text">initializing_qa_suite...</span>
+            </div>
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loader-bar"></div>
+            </div>
+            <div class="loader-percentage" id="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header / Fixed Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container container">
+            <a href="#hero" class="navbar-logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Nelson<span class="logo-highlight">.QA</span><span
+                    class="logo-accent"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link" id="nav-link-sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link"
+                            id="nav-link-experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a href="#proyectos" class="nav-link" id="nav-link-proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item"><a href="#herramientas" class="nav-link"
+                            id="nav-link-herramientas">Herramientas</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+                    <li class="nav-item"><a href="#trayectoria" class="nav-link"
+                            id="nav-link-trayectoria">Trayectoria</a></li>
+                    <li class="nav-item"><a href="#contacto" class="btn btn-secondary nav-cta"
+                            id="nav-link-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-info animate-on-load">
+                    <div class="badge-status">
+                        <span class="status-dot animate-pulse"></span> Junior QA Automation
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Nelson Álvarez</span>
+                    </h1>
+                    <div class="hero-meta">
+                        <span><i class="fa-solid fa-calendar-days text-primary"></i> 25 años</span>
+                        <span class="meta-divider">|</span>
+                        <span><i class="fa-solid fa-location-dot text-primary"></i> Medellín, Colombia</span>
+                    </div>
+                    <p class="hero-phrase">
+                        "Apasionado por garantizar calidad de software mediante pruebas funcionales, automatización y
+                        validación de arquitecturas distribuidas."
+                    </p>
+
+                    <div class="hero-specialties">
+                        <span class="specialty-tag"><i class="fa-solid fa-circle-check"></i> QA Manual</span>
+                        <span class="specialty-tag"><i class="fa-solid fa-gears"></i> QA Automation</span>
+                        <span class="specialty-tag"><i class="fa-solid fa-network-wired"></i> API Testing</span>
+                        <span class="specialty-tag"><i class="fa-solid fa-gauge-high"></i> Performance Testing</span>
+                        <span class="specialty-tag"><i class="fa-solid fa-laptop-code"></i> Automatización
+                            Fullstack</span>
+                        <span class="specialty-tag"><i class="fa-solid fa-cubes"></i> Certificación
+                            Microservicios</span>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#proyectos" class="btn btn-primary" id="hero-btn-proyectos">
+                            Ver proyectos <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline" id="hero-btn-contacto">
+                            Contactarme <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                        <a href="assets/CV%20Nelson%20Alvarez.pdf" download class="btn btn-primary"
+                            id="download-cv-btn"><i class="fa-solid fa-download"></i> Descargar CV</a>
+
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-on-load">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-img-container">
+                                <img src="assets/profile.jpeg" alt="Nelson Álvarez Portrait" class="profile-img"
+                                    id="profile-avatar">
+                                <div class="profile-tech-grid"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#sobre-mi" class="scroll-down-indicator" aria-label="Ir a la sección Sobre Mí">
+                <i class="fa-solid fa-chevron-down animate-bounce"></i>
+            </a>
+        </section>
+
+        <!-- Sobre Mí Section -->
+        <section id="sobre-mi" class="section sobre-mi-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">¿Quién soy?</span>
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="sobre-mi-grid">
+                    <div class="sobre-mi-content">
+                        <p class="lead-text">
+                            Soy un profesional de QA apasionado por la calidad de software y la automatización de
+                            pruebas.
+                        </p>
+                        <p class="body-text">
+                            Tengo experiencia realizando pruebas funcionales, automatización frontend y backend,
+                            validación de APIs REST, certificación de microservicios, pruebas de rendimiento y
+                            aseguramiento de calidad en arquitecturas empresariales. Mi objetivo es entregar productos
+                            confiables, escalables y de alta calidad.
+                        </p>
+
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <h3>Enfoque Técnico</h3>
+                                <p>Certificación rigurosa de APIs, microservicios y flujos de datos complejos.</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+                                <h3>Eficiencia</h3>
+                                <p>Automatización inteligente para acelerar el ciclo de vida del desarrollo (CI/CD).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobre-mi-console">
+                        <div class="console-header">
+                            <div class="console-buttons">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="console-title">developer_profile.json</div>
+                        </div>
+                        <div class="console-body">
+                            <pre><code><span class="key">"name"</span>: <span class="string">"Nelson Álvarez"</span>,
+<span class="key">"age"</span>: <span class="number">25</span>,
+<span class="key">"location"</span>: <span class="string">"Medellín, Colombia"</span>,
+<span class="key">"role"</span>: <span class="string">"Junior QA Automation "</span>,
+<span class="key">"focus"</span>: [
+  <span class="string">"Functional Testing"</span>,
+  <span class="string">"API & Microservices"</span>,
+  <span class="string">"Performance Testing"</span>
+],
+<span class="key">"preferred_stack"</span>: {
+  <span class="key">"languages"</span>: [<span class="string">"Java"</span>, <span class="string">"JavaScript"</span>],
+  <span class="key">"frameworks"</span>: [<span class="string">"Karate"</span>, <span class="string">"Serenity BDD"</span>, <span class="string">"Playwright"</span>],
+  <span class="key">"tools"</span>: [<span class="string">"Postman"</span>, <span class="string">"SoapUI"</span>, <span class="string">"JMeter"</span>, <span class="string">"Git"</span>]
+},
+<span class="key">"status"</span>: <span class="string">"Garantizando calidad en producción..."</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Profesional Section -->
+        <section id="experiencia" class="section experiencia-section bg-alt scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Trayectoria Laboral</span>
+                    <h2 class="section-title">Experiencia Profesional</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="experience-card glass-card">
+                    <div class="experience-header">
+                        <div class="role-info">
+                            <span class="exp-badge">QA Automation </span>
+                            <h3 class="role-title">QA Automation </h3>
+                            <p class="company-timeline"><i class="fa-solid fa-briefcase"></i> Consultoría Tecnológica
+                                Empresarial | 2024 - Presente</p>
+                        </div>
+                        <div class="company-logo-simulation">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+
+                    <div class="experience-body">
+                        <h4 class="sub-section-title"><i class="fa-solid fa-list-check text-primary"></i>
+                            Responsabilidades Clave</h4>
+                        <ul class="responsibilities-list">
+                            <li><i class="fa-solid fa-square-check"></i> Automatización de pruebas frontend integrando
+                                frameworks robustos.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Automatización de APIs REST para validación de
+                                flujos de datos.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Validación exhaustiva de arquitecturas de
+                                microservicios REST.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Certificación de equivalencias técnicas y
+                                funcionales entre servicios heredados SOAP y nuevos endpoints REST JSON.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Comparación en profundidad de estructuras
+                                Request y Response entre sistemas legados y microservicios modernos.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Creación de ambientes mock y simulación de
+                                respuestas SOAP complejas usando SoapUI.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Ejecución de pruebas funcionales, manuales, de
+                                integración y End-to-End (E2E).</li>
+                            <li><i class="fa-solid fa-square-check"></i> Diseño, parametrización y ejecución de pruebas
+                                de rendimiento (Performance & Stress Testing) con Apache JMeter.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Revisión y validación exhaustiva de
+                                documentación técnica de APIs.</li>
+                            <li><i class="fa-solid fa-square-check"></i> Certificación exitosa de más de 500 servicios
+                                SOAP migrados hacia microservicios REST modernos.</li>
+                        </ul>
+
+                        <div class="featured-project-container glass-card">
+                            <div class="project-tag-featured">Proyecto Clave</div>
+                            <h4 class="featured-project-title"><i class="fa-solid fa-shuffle text-cyan"></i> Migración
+                                Bus12C &rarr; Microservicios REST JSON</h4>
+                            <p class="featured-project-desc">
+                                Lideré la certificación y validación técnica del proceso crítico de migración del Bus de
+                                integración legado (Bus12C) hacia una arquitectura moderna basada en microservicios REST
+                                JSON.
+                            </p>
+                            <h5 class="featured-project-sub">Mis Actividades en este Proyecto:</h5>
+                            <ul class="featured-project-list">
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Verificación de
+                                        equivalencia funcional:</strong> Garantizar que el comportamiento del nuevo
+                                    sistema sea exactamente el mismo que el anterior.</li>
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Comparación SOAP
+                                        vs REST:</strong> Contraste de cargas útiles (payloads), tipos de datos y
+                                    códigos de estado.</li>
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Validación de
+                                        transformaciones:</strong> Certificar el flujo de datos hacia sistemas y bases
+                                    de datos legadas.</li>
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Certificación
+                                        técnica de servicios:</strong> Aprobación de despliegues en producción de
+                                    endpoints críticos.</li>
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Automatización de
+                                        pruebas:</strong> Desarrollo parcial de flujos automatizados usando Apache
+                                    JMeter para simular cargas de concurrencia.</li>
+                                <li><i class="fa-solid fa-circle-chevron-right text-cyan"></i> <strong>Mocks:</strong>
+                                    Implementación de mocks en SoapUI y Mockoon para desacoplar dependencias no migradas
+                                    durante las pruebas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Personales y Técnicos Section -->
+        <section id="proyectos" class="section proyectos-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Mis Desarrollos y Suites de Prueba</span>
+                    <h2 class="section-title">Proyectos Personales y Técnicos</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Proyecto 1: Wearabilities -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-child-reaching"></i></span>
+                            <h3 class="project-title">Wearabilities</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Aplicación diseñada para asistir a maestros y educadores en la supervisión de niños con
+                                discapacidades o necesidades de salud mental en entornos escolares.
+                            </p>
+                            <div class="project-details">
+                                <h4 class="details-title">Responsabilidades de QA:</h4>
+                                <ul class="details-list">
+                                    <li><i class="fa-solid fa-caret-right text-primary"></i> Automatización completa de
+                                        APIs de sincronización.</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary"></i> Pruebas funcionales de
+                                        UX/UI y notificaciones.</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary"></i> Automatización móvil
+                                        multiplataforma (Android & iOS).</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary"></i> Ejecución de pruebas de
+                                        carga (Performance & Stress Testing).</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Postman</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Karate Framework</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Appium</span>
+                                <span class="tech-tag">JMeter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: CRUD API Automation -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-arrows-spin"></i></span>
+                            <h3 class="project-title">CRUD API Automation</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Suite de pruebas automatizadas y scripts para validar operaciones CRUD (Create, Read,
+                                Update, Delete) interactuando con APIs públicas.
+                            </p>
+                            <div class="project-details">
+                                <h4 class="details-title">Operaciones Automatizadas:</h4>
+                                <div class="crud-badge-grid">
+                                    <span class="crud-badge get">GET</span>
+                                    <span class="crud-badge post">POST</span>
+                                    <span class="crud-badge put">PUT</span>
+                                    <span class="crud-badge patch">PATCH</span>
+                                    <span class="crud-badge delete">DELETE</span>
+                                </div>
+                                <p class="details-text-extra">
+                                    Garantiza la consistencia en validaciones de respuestas JSON, validación de schemas,
+                                    códigos HTTP y tiempos de respuesta.
+                                </p>
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Karate Framework</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">JSON</span>
+                                <span class="tech-tag">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: Aplicación Java de certificación de microservicios -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-file-excel"></i></span>
+                            <h3 class="project-title">Certificador de Microservicios</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Aplicación de consola escrita en Java diseñada para optimizar y generar de manera
+                                automatizada reportes de certificación técnica de microservicios.
+                            </p>
+                            <div class="project-details">
+                                <h4 class="details-title">Funcionamiento:</h4>
+                                <p class="details-text-extra">
+                                    La herramienta solicita mediante consola los datos del servicio validado (Request,
+                                    Response, endpoints, equivalencia) y genera de forma automática archivos Excel
+                                    estructurados con plantillas de certificación técnica oficiales. Ahorra hasta un 60%
+                                    del tiempo administrativo de QA.
+                                </p>
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Apache POI</span>
+                                <span class="tech-tag">Excel Engine</span>
+                                <span class="tech-tag">Console App</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Herramientas Section -->
+        <section id="herramientas" class="section herramientas-section bg-alt scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Stack de Tecnologías</span>
+                    <h2 class="section-title">Herramientas y Tecnologías</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Tabs de Navegación de Herramientas -->
+                <div class="tools-tabs-container">
+                    <div class="tools-tabs">
+                        <button class="tab-btn active" data-tab="all" id="tab-all">Todas</button>
+                        <button class="tab-btn" data-tab="backend" id="tab-backend">Backend / API</button>
+                        <button class="tab-btn" data-tab="automation" id="tab-automation">Automatización</button>
+                        <button class="tab-btn" data-tab="languages" id="tab-languages">Lenguajes</button>
+                        <button class="tab-btn" data-tab="frontend" id="tab-frontend">Frontend</button>
+                        <button class="tab-btn" data-tab="others" id="tab-others">Otros y Metodologías</button>
+                    </div>
+                </div>
+
+                <!-- Grid de Herramientas -->
+                <div class="tools-grid" id="tools-grid">
+
+                    <!-- Backend / API -->
+                    <div class="tool-card glass-card" data-category="backend">
+                        <div class="tool-icon"><i class="fa-solid fa-paper-plane text-orange"></i></div>
+                        <h3 class="tool-name">Postman</h3>
+                        <span class="tool-category-badge">Backend / API</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="backend">
+                        <div class="tool-icon"><i class="fa-solid fa-server text-blue-alt"></i></div>
+                        <h3 class="tool-name">SoapUI</h3>
+                        <span class="tool-category-badge">Backend / API</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="backend">
+                        <div class="tool-icon"><i class="fa-solid fa-vial text-cyan"></i></div>
+                        <h3 class="tool-name">Karate Framework</h3>
+                        <span class="tool-category-badge">Backend / API</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="backend">
+                        <div class="tool-icon"><i class="fa-solid fa-gauge-high text-primary"></i></div>
+                        <h3 class="tool-name">JMeter</h3>
+                        <span class="tool-category-badge">Backend / API</span>
+                    </div>
+
+                    <!-- Automatización -->
+                    <div class="tool-card glass-card" data-category="automation">
+                        <div class="tool-icon"><i class="fa-solid fa-shield-halved text-green"></i></div>
+                        <h3 class="tool-name">Serenity BDD</h3>
+                        <span class="tool-category-badge">Automatización</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="automation">
+                        <div class="tool-icon"><i class="fa-solid fa-spider text-cyan"></i></div>
+                        <h3 class="tool-name">Selenium</h3>
+                        <span class="tool-category-badge">Automatización</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="automation">
+                        <div class="tool-icon"><i class="fa-solid fa-feather text-green-alt"></i></div>
+                        <h3 class="tool-name">Cucumber</h3>
+                        <span class="tool-category-badge">Automatización</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="automation">
+                        <div class="tool-icon"><i class="fa-solid fa-mask text-primary"></i></div>
+                        <h3 class="tool-name">Playwright</h3>
+                        <span class="tool-category-badge">Automatización</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="automation">
+                        <div class="tool-icon"><i class="fa-solid fa-mobile-screen-button text-purple"></i></div>
+                        <h3 class="tool-name">Appium</h3>
+                        <span class="tool-category-badge">Automatización</span>
+                    </div>
+
+                    <!-- Lenguajes -->
+                    <div class="tool-card glass-card" data-category="languages">
+                        <div class="tool-icon"><i class="fa-brands fa-java text-orange"></i></div>
+                        <h3 class="tool-name">Java</h3>
+                        <span class="tool-category-badge">Lenguajes</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="languages">
+                        <div class="tool-icon"><i class="fa-brands fa-js text-yellow"></i></div>
+                        <h3 class="tool-name">JavaScript</h3>
+                        <span class="tool-category-badge">Lenguajes</span>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="tool-card glass-card" data-category="frontend">
+                        <div class="tool-icon"><i class="fa-brands fa-html5 text-orange"></i></div>
+                        <h3 class="tool-name">HTML</h3>
+                        <span class="tool-category-badge">Frontend</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="frontend">
+                        <div class="tool-icon"><i class="fa-brands fa-css3-alt text-primary"></i></div>
+                        <h3 class="tool-name">CSS</h3>
+                        <span class="tool-category-badge">Frontend</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="frontend">
+                        <div class="tool-icon"><i class="fa-brands fa-react text-cyan"></i></div>
+                        <h3 class="tool-name">React</h3>
+                        <span class="tool-category-badge">Frontend</span>
+                    </div>
+
+                    <!-- Git (Control de versiones) - mapped under others for tab clarity, but distinct -->
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-brands fa-git-alt text-orange"></i></div>
+                        <h3 class="tool-name">Git</h3>
+                        <span class="tool-category-badge">Versiones</span>
+                    </div>
+
+                    <!-- Otros -->
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-cubes text-blue-alt"></i></div>
+                        <h3 class="tool-name">Microservicios REST</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-envelope-open-text text-purple"></i></div>
+                        <h3 class="tool-name">SOAP</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-brackets-curly text-yellow"></i></div>
+                        <h3 class="tool-name">JSON</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-code text-green"></i></div>
+                        <h3 class="tool-name">XPath</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-gauge text-primary"></i></div>
+                        <h3 class="tool-name">Performance Testing</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+
+                    <div class="tool-card glass-card" data-category="others">
+                        <div class="tool-icon"><i class="fa-solid fa-shield-virus text-cyan"></i></div>
+                        <h3 class="tool-name">API Testing</h3>
+                        <span class="tool-category-badge">Otros</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Progress Bars -->
+        <section id="skills" class="section skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Nivel de Competencia</span>
+                    <h2 class="section-title">Habilidades Profesionales</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- QA Automation (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">QA Automation</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- API Testing (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">API Testing</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Java (90%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Testing (85%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Performance Testing</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- JMeter (85%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">JMeter</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Serenity BDD (90%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Serenity BDD</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Postman (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Postman</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- SoapUI (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">SoapUI</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Playwright (80%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Playwright</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Selenium (85%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Selenium</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Manual Testing (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Manual Testing</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Microservices Validation (95%) -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-header">
+                            <span class="skill-name">Microservices Validation</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación y Trayectoria Section (Combined Visual Layout) -->
+        <section id="trayectoria" class="section trayectoria-section bg-alt scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Educación e Hitos</span>
+                    <h2 class="section-title">Formación y Trayectoria</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="trayectoria-grid">
+                    <!-- Formación -->
+                    <div class="formacion-container">
+                        <h3 class="sub-section-title"><i class="fa-solid fa-graduation-cap text-primary"></i> Formación
+                            Académica</h3>
+                        <div class="formacion-card glass-card">
+                            <span class="education-icon"><i class="fa-solid fa-certificate"></i></span>
+                            <div class="formacion-info">
+                                <h4 class="degree-title">Profesional en Desarrollo de Software</h4>
+                                <span class="education-date">Egresado</span>
+                                <p class="education-desc">
+                                    Enfoque especializado en metodologías de desarrollo ágil, ingeniería de calidad e
+                                    infraestructura de pruebas continuas.
+                                </p>
+                                <h5 class="studied-title">Áreas de Especialización Académica:</h5>
+                                <div class="studied-tags">
+                                    <span class="study-tag">Desarrollo de Software</span>
+                                    <span class="study-tag">QA</span>
+                                    <span class="study-tag">Automatización</span>
+                                    <span class="study-tag">Testing Funcional</span>
+                                    <span class="study-tag">Pruebas Continuas</span>
+                                    <span class="study-tag">Performance Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Profesional -->
+                    <div class="timeline-container">
+                        <h3 class="sub-section-title"><i class="fa-solid fa-clock-rotate-left text-primary"></i> Línea
+                            del Tiempo</h3>
+                        <div class="timeline">
+                            <!-- Hito 1: Actualidad -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Actualidad</div>
+                                <div class="timeline-content glass-card">
+                                    <h4>Certificación de Microservicios Empresariales</h4>
+                                    <p>Validación rigurosa de APIs distribuidas y arquitecturas de integración de alto
+                                        rendimiento.</p>
+                                </div>
+                            </div>
+
+                            <!-- Hito 2: 2025 (JMeter) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2025</div>
+                                <div class="timeline-content glass-card">
+                                    <h4>Automatización JMeter</h4>
+                                    <p>Diseño y simulación de escenarios de carga y stress para sistemas empresariales
+                                        críticos.</p>
+                                </div>
+                            </div>
+
+                            <!-- Hito 3: 2025 (SOAP -> REST) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2025</div>
+                                <div class="timeline-content glass-card">
+                                    <h4>Proyecto Migración SOAP &rarr; REST</h4>
+                                    <p>Certificación técnica de equivalencias del Bus12C hacia endpoints REST JSON.</p>
+                                </div>
+                            </div>
+
+                            <!-- Hito 4: 2024 (Frontend y APIs) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content glass-card">
+                                    <h4>Automatización Frontend y APIs</h4>
+                                    <p>Creación de suites de pruebas automáticas de regresión UI y servicios Web.</p>
+                                </div>
+                            </div>
+
+                            <!-- Hito 5: 2024 (Wearabilities) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content glass-card">
+                                    <h4>Proyecto Wearabilities</h4>
+                                    <p>Diseño del plan de pruebas, automatización móvil y APIs para la aplicación
+                                        escolar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills & Stats (Combined Section for High Visual Impact) -->
+        <section id="habilidades-blandas" class="section soft-skills-section scroll-reveal">
+            <div class="container">
+                <div class="soft-skills-grid">
+                    <!-- Habilidades Blandas -->
+                    <div class="soft-skills-content">
+                        <div class="section-header">
+                            <span class="section-subtitle">Habilidades Interpersonales</span>
+                            <h2 class="section-title">Habilidades Blandas</h2>
+                            <div class="section-line"></div>
+                        </div>
+                        <p class="soft-skills-intro">
+                            El éxito de la ingeniería de calidad no depende únicamente de escribir scripts
+                            automatizados, sino de entender la arquitectura, comunicase eficientemente y colaborar en
+                            equipo.
+                        </p>
+                        <div class="soft-skills-list-grid">
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-brain"></i></span>
+                                <div>
+                                    <h4>Pensamiento analítico</h4>
+                                    <p>Resolución lógica de problemas de integración y detección de cuellos de botella.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-puzzle-piece"></i></span>
+                                <div>
+                                    <h4>Resolución de problemas</h4>
+                                    <p>Estrategia ágil ante fallos y diagnóstico rápido en entornos complejos.</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <div>
+                                    <h4>Atención al detalle</h4>
+                                    <p>Minuciosidad al validar payloads, esquemas JSON y casos borde.</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-users"></i></span>
+                                <div>
+                                    <h4>Trabajo en equipo</h4>
+                                    <p>Sinergia constante con desarrolladores, BAs y Project Managers.</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-comments"></i></span>
+                                <div>
+                                    <h4>Comunicación efectiva</h4>
+                                    <p>Reportes claros de bugs y explicaciones concisas de bloqueantes.</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-sliders"></i></span>
+                                <div>
+                                    <h4>Adaptabilidad</h4>
+                                    <p>Rápida transición frente a cambios de requerimientos y nuevas stacks.</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill-card glass-card">
+                                <span class="soft-skill-icon"><i class="fa-solid fa-book-open"></i></span>
+                                <div>
+                                    <h4>Aprendizaje continuo</h4>
+                                    <p>Mantenerse al día con las últimas herramientas y tendencias de testing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estadísticas Animadas -->
+                    <div class="stats-container-wrapper">
+                        <div class="stats-bg-glow"></div>
+                        <div class="stats-grid">
+                            <!-- Stat 1: +500 -->
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-cubes-stacked text-primary"></i></div>
+                                <div class="stat-number" data-target="500">+0</div>
+                                <div class="stat-label">Servicios Certificados</div>
+                            </div>
+
+                            <!-- Stat 2: 4+ -->
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-terminal text-cyan"></i></div>
+                                <div class="stat-number" data-target="4">0+</div>
+                                <div class="stat-label">Herramientas Dominadas</div>
+                            </div>
+
+                            <!-- Stat 3: 25+ -->
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-vials text-purple"></i></div>
+                                <div class="stat-number" data-target="25">0+</div>
+                                <div class="stat-label">Tipos de Pruebas Ejecutadas</div>
+                            </div>
+
+                            <!-- Stat 4: 1000+ -->
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon"><i class="fa-solid fa-clipboard-check text-green"></i></div>
+                                <div class="stat-number" data-target="1000">0+</div>
+                                <div class="stat-label">Validaciones Funcionales</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section contacto-section bg-alt scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">¿Hablamos?</span>
+                    <h2 class="section-title">Contacto</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contenedor-contacto">
+                    <!-- Información de Contacto -->
+                    <div class="contacto-info">
+                        <h3>Información de Contacto</h3>
+
+
+                        <div class="contacto-details-list">
+                            <a href="mailto:nelsondavid.dev@gmail.com" class="contacto-detail-item glass-card"
+                                id="contact-email-link">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope text-primary"></i></div>
+                                <div class="detail-text">
+                                    <span>Escríbeme por Correo</span>
+                                    <strong>nelsondavid.dev@gmail.com</strong>
+                                </div>
+                            </a>
+
+                            <div class="contacto-detail-item glass-card">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot text-primary"></i></div>
+                                <div class="detail-text">
+                                    <span>Ubicación actual</span>
+                                    <strong>Medellín, Colombia</strong>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="social-links-container">
+                            <h4>Redes Profesionales</h4>
+                            <div class="social-links-grid">
+                                <a href="https://www.linkedin.com/in/nelson-david-%C3%A1lvarez-rinc%C3%B3n-7773061a4/"
+                                    target="_blank" rel="noopener noreferrer" class="social-btn linkedin"
+                                    aria-label="LinkedIn" id="social-linkedin">
+                                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/NelsonDavidDev" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn github" aria-label="GitHub" id="social-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Formulario de Contacto -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="navbar-logo">
+                    <span class="logo-accent">&lt;</span>Nelson<span class="logo-highlight">.QA</span><span
+                        class="logo-accent"> /&gt;</span>
+                </div>
+                <p>Ingeniería y Certificación de Software con altos estándares de calidad.</p>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
